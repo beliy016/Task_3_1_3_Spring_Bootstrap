@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e6665f54-8b98-4769-a2d0-0fb706456adf" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2uwgMz9LbGHKk14gmF0kfzAo9DK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.SpringBootSecurityDemoApplicationTests.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.SpringBootSecurityDemoApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Andrew/IdeaProjects/PRE_PROJECT/PP_3_1_3_Spring_Bootstrap",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "database.query.execution",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrew\IdeaProjects\PP_3_1_2_Boot_Security\src\main\resources\templates" />
+      <recent name="C:\Users\Andrew\IdeaProjects\PP_3_1_2_Boot_Security\src\main\java\ru\kata\spring\boot_security\demo\services" />
+      <recent name="C:\Users\Andrew\IdeaProjects\PP_3_1_2_Boot_Security\src\main\java\ru\kata\spring\boot_security\demo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.kata.spring.boot_security.demo.configs" />
+      <recent name="ru.kata.spring.boot_security.demo.controllers" />
+      <recent name="ru.kata.spring.boot_security.demo.entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringBootSecurityDemoApplication">
+    <configuration name="SpringBootSecurityDemoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot_security-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.kata.spring.boot_security.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.kata.spring.boot_security.demo" />
+      <option name="MAIN_CLASS_NAME" value="ru.kata.spring.boot_security.demo.SpringBootSecurityDemoApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootSecurityDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-boot_security-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.kata.spring.boot_security.demo.SpringBootSecurityDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpringBootSecurityDemoApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6665f54-8b98-4769-a2d0-0fb706456adf" name="Changes" comment="" />
+      <created>1743165006441</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743165006441</updated>
+      <workItem from="1743165007486" duration="5229000" />
+      <workItem from="1743189861198" duration="609000" />
+      <workItem from="1743248430032" duration="665000" />
+      <workItem from="1743367397530" duration="1308000" />
+      <workItem from="1743508300780" duration="15205000" />
+      <workItem from="1743585035483" duration="14927000" />
+      <workItem from="1743661202873" duration="2390000" />
+      <workItem from="1743668534226" duration="21675000" />
+      <workItem from="1743766288499" duration="21627000" />
+      <workItem from="1743836769197" duration="26512000" />
+      <workItem from="1743934239890" duration="1179000" />
+      <workItem from="1743936179205" duration="268000" />
+      <workItem from="1743937171856" duration="402000" />
+      <workItem from="1745777542962" duration="211000" />
+      <workItem from="1749721640160" duration="68000" />
+      <workItem from="1749721717151" duration="8145000" />
+      <workItem from="1749734764687" duration="1539000" />
+      <workItem from="1749736357768" duration="59000" />
+      <workItem from="1749736444875" duration="12000" />
+      <workItem from="1749736554216" duration="573000" />
+      <workItem from="1749739327977" duration="1089000" />
+      <workItem from="1750013157421" duration="8408000" />
+      <workItem from="1750078890037" duration="11965000" />
+      <workItem from="1750096656761" duration="8423000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
