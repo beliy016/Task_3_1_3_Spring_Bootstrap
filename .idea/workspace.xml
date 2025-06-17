@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6665f54-8b98-4769-a2d0-0fb706456adf" name="Changes" comment="" />
+    <list default="true" id="e6665f54-8b98-4769-a2d0-0fb706456adf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +56,7 @@
     "Spring Boot.SpringBootSecurityDemoApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Andrew/IdeaProjects/PRE_PROJECT/PP_3_1_3_Spring_Bootstrap",
+    "last_opened_file_path": "C:/Users/Andrew/IdeaProjects/PRE_PROJECT/PP_3_1_2_Spring_Boot_Security",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -150,6 +152,8 @@
       <workItem from="1750013157421" duration="8408000" />
       <workItem from="1750078890037" duration="11965000" />
       <workItem from="1750096656761" duration="8915000" />
+      <workItem from="1750151762851" duration="459000" />
+      <workItem from="1750152481594" duration="9000" />
     </task>
     <servers />
   </component>
