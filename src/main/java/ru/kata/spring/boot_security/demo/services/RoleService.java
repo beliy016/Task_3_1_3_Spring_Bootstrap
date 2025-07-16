@@ -1,5 +1,6 @@
 package ru.kata.spring.boot_security.demo.services;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.kata.spring.boot_security.demo.entity.Role;
@@ -7,17 +8,13 @@ import ru.kata.spring.boot_security.demo.repositories.RoleRepository;
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class RoleService {
 
-    private RoleRepository roleRepository;
+    private final RoleRepository roleRepository;
 
-    @Autowired
-    public RoleService(RoleRepository roleRepository) {
-        this.roleRepository = roleRepository;
-    }
-
-    public Role getById(Long id) {
-        return roleRepository.getById(id);
+    public Role findById(Long id) {
+        return roleRepository.findById(id).orElseThrow();
     }
 
     public List<Role> findAll() {

@@ -205,7 +205,7 @@
                                 <div class="container mt-4">
                                     <div class="row justify-content-center">
                                         <div class="col-md-4">
-                                            <form th:action="@{/admin/saveNewUser}" th:object="${userForm}"
+                                            <form th:action="@{/admin/save}" th:object="${userForm}"
                                                   th:method="POST" id="userForm">
 
                                                 <div class="mb-3 text-center fw-bold">
@@ -234,7 +234,7 @@
 
                                                 <div class="mb-3 text-center fw-bold">
                                                     <label>Roles</label>
-                                                    <select multiple class="form-select" th:field="*{roles}"
+                                                    <select multiple class="form-select" name="roleIds"
                                                             th:attr="size=${#lists.size(allRoles)}">
                                                         <option th:each="role : ${allRoles}" th:value="${role.id}"
                                                                 th:text="${#strings.replace(role.name, 'ROLE_', '')}"/>
@@ -395,7 +395,7 @@
      aria-labelledby="editUserModalLabel" aria-hidden="true">
     <div class="modal-dialog custom-width">
 
-        <form class="modal-content" th:action="@{/admin/updateUser}" th:object="${userForm}" method="post"
+        <form class="modal-content" th:action="@{/admin/update}" th:object="${userForm}" method="post"
               id="user">
 
             <div class="modal-header">
@@ -445,7 +445,7 @@
                 <div class="mb-3 text-center fw-bold">
                     <label>Role</label>
                     <div class="mx-auto" style="max-width: 200px;">
-                        <select multiple class="form-select" th:field="*{roles}"
+                        <select multiple class="form-select" name="roleIds"
                                 th:attr="size=${#lists.size(allRoles)}">
                             <option th:each="role : ${allRoles}" th:value="${role.id}"
                                     th:text="${#strings.replace(role.name, 'ROLE_', '')}"></option>
@@ -467,7 +467,7 @@
 <div sec:authorize="hasRole('ADMIN')" class="modal fade" id="deleteUserModal" tabindex="-1"
      aria-labelledby="deleteUserModalLabel" aria-hidden="true">
     <div class="modal-dialog custom-width">
-        <form class="modal-content" th:action="@{/admin/deleteUser}" method="post">
+        <form class="modal-content" th:action="@{/admin/delete}" method="post">
 
             <div class="modal-header">
                 <h5 class="modal-title" id="deleteUserModalLabel">Delete user</h5>
