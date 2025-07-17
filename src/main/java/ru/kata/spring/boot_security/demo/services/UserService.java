@@ -18,6 +18,7 @@ import javax.transaction.Transactional;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
@@ -25,8 +26,13 @@ import java.util.stream.Collectors;
 public class UserService implements UserDetailsService {
 
     private final UserRepository userRepository;
+    private final RoleService roleService;
     private final PasswordEncoder passwordEncoder;
 
+    private void setRolesFromDB(List<Long> rolesIds, User user) {
+        Set<Role> roles = rolesIds.stream().map(roleService::findById).collect(Collectors.toSet());
+        user.setRoles(roles);
+    }
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
@@ -55,12 +61,12 @@ public class UserService implements UserDetailsService {
     }
 
     @Transactional
-    public boolean save(User user) {
+    public boolean save(User user, List<Long> roleIds) {
         User userFromDB = userRepository.findByEmail(user.getEmail());
         if (userFromDB != null) {
             return false;
         }
-
+        setRolesFromDB(roleIds, user);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
 
         userRepository.save(user);
@@ -68,7 +74,7 @@ public class UserService implements UserDetailsService {
     }
 
     @Transactional
-    public void update(User user) {
+    public void update(User user, List<Long> roleIds) {
         User existingUser = userRepository.findById(user.getId()).orElse(null);
         if (existingUser != null) {
             if (user.getPassword() == null || user.getPassword().isBlank()) {
@@ -76,7 +82,7 @@ public class UserService implements UserDetailsService {
             } else {
                 user.setPassword(passwordEncoder.encode(user.getPassword()));
             }
-
+            setRolesFromDB(roleIds, user);
             userRepository.save(user);
         }
     }

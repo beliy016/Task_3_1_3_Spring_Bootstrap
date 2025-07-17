@@ -25,20 +25,6 @@ public class AdminController {
     private final UserService userService;
     private final RoleService roleService;
 
-    private void securityAndSetRoles(List<Long> rolesIdsFromForm, User userForm, UserDetails user) {
-        Set<Role> roles = rolesIdsFromForm.stream().map(roleService::findById).collect(Collectors.toSet());
-        Role admin = new Role(2L, "ROLE_ADMIN");
-        if (roles.contains(admin)) {
-            if (user.getAuthorities().stream().anyMatch(a -> a.getAuthority().equals("ROLE_ADMIN"))) {
-                userForm.setRoles(roles);
-            } else {
-                throw new AccessDeniedException("Нет прав");
-            }
-        } else {
-            userForm.setRoles(roles);
-        }
-    }
-
     @GetMapping("")
     public String getAll(@AuthenticationPrincipal UserDetails userDetails, Model model) {
         User user = userService.findByEmail(userDetails.getUsername());
@@ -55,17 +41,14 @@ public class AdminController {
 
     @PostMapping("/save")
     public String save(@ModelAttribute("userForm") @Valid User userForm, BindingResult bindingResult,
-                       @RequestParam("roleIds") List<Long> roleIds,
-                       @AuthenticationPrincipal UserDetails user, Model model) {
+                       @RequestParam("roleIds") List<Long> roleIds, Model model) {
 
         if (bindingResult.hasErrors()) {
             model.addAttribute("allRoles", roleService.findAll());
             return "admin";
         }
 
-        securityAndSetRoles(roleIds, userForm, user);
-
-        if (!userService.save(userForm)) {
+        if (!userService.save(userForm, roleIds)) {
             model.addAttribute("emailError", "Пользователь с таким email уже существует");
             model.addAttribute("allRoles", roleService.findAll());
             return "admin";
@@ -84,12 +67,8 @@ public class AdminController {
     //=================================================================================
 
     @PostMapping("/update")
-    public String update(@ModelAttribute("userForm") User userForm, @AuthenticationPrincipal UserDetails user,
-                         @RequestParam("roleIds") List<Long> roleIds) {
-
-        securityAndSetRoles(roleIds, userForm, user);
-
-        userService.update(userForm);
+    public String update(@ModelAttribute("userForm") User userForm, @RequestParam("roleIds") List<Long> roleIds) {
+        userService.update(userForm, roleIds);
         return "redirect:/admin";
     }
 }
